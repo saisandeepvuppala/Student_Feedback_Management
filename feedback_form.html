@@ -1,0 +1,189 @@
+<!DOCTYPE>
+<html>
+<head>
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<style>
+
+.register-button:active {
+  background: #eee;
+  border-color: #c3c3c3 #d1d1d1 #d8d8d8;
+  background-image: -webkit-linear-gradient(top, #eeeeee, #fcfcfc);
+  background-image: -moz-linear-gradient(top, #eeeeee, #fcfcfc);
+  background-image: -o-linear-gradient(top, #eeeeee, #fcfcfc);
+  background-image: linear-gradient(to bottom, #eeeeee, #fcfcfc);
+  -webkit-box-shadow: inset 0 1px rgba(0, 0, 0, 0.03);
+  box-shadow: inset 0 1px rgba(0, 0, 0, 0.03);
+}
+.register-button:focus {
+  outline: 0;
+}
+.register-button {
+  display: block;
+  width: 10%;
+  height: 42px;
+  margin-top: 25px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #494d59;
+  text-align: center;
+  text-shadow: 0 1px rgba(255, 255, 255, 0.5);
+  background: #fcfcfc;
+  border: 1px solid;
+  border-color: #d8d8d8 #d1d1d1 #c3c3c3;
+  border-radius: 2px;
+  cursor: pointer;
+  background-image: -webkit-linear-gradient(top, #fefefe, #eeeeee);
+  background-image: -moz-linear-gradient(top, #fefefe, #eeeeee);
+  background-image: -o-linear-gradient(top, #fefefe, #eeeeee);
+  background-image: linear-gradient(to bottom, #fefefe, #eeeeee);
+  -webkit-box-shadow: inset 0 -1px rgba(0, 0, 0, 0.03), 0 1px rgba(0, 0, 0, 0.04);
+  box-shadow: inset 0 -1px rgba(0, 0, 0, 0.03), 0 1px rgba(0, 0, 0, 0.04);
+}
+.instr{
+text-align:right;
+}
+</style>
+</head>
+<body style="background:url('light-blue-background.jpg')">
+<form action="computation1.php" method="post">
+<center><h1>Feedback Form</h1></center>
+<h2 style="float:left">Please select the Teacher,Course and Period:</h2>&nbsp&nbsp&nbsp
+<div class="instr">
+<h4>*1-Least Satisfied ,2...,3...,4...,5-Most Satisfied&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</h4>
+</div>
+<br>
+<select name="teacher" class="selectpicker">
+<option value="9">Ms S Sasirekha</option>
+<option value="101">Mr. M.P. Srinivas Murthy</option>
+<option value="102">Mr. B. Vinod Kumar</option>
+<option value="103">Mr. B. Narendra Kr</option>
+<option value="105">Ms. G. Sirisha Devi</option>
+</select>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<select name="course" class="selectpicker">
+<option value="PHP">PHP</option>
+<option value="HTML">HTML</option>
+<option value="EthicalHacking">Ethical hacking</option>
+<option value="c">C</option>
+<option value="java">Java</option>
+</select>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<select name="period" class="selectpicker">
+<option value="jan">January</option>
+<option value="feb">Febrauary</option>
+<option value="mar">March</option>
+<option value="apr">April</option>
+<option value="may">May</option>
+<option value="jun">June</option>
+<option value="jly">July</option>
+<option value="aug">August</option>
+<option value="sep">September</option>
+<option value="oct">October</option>
+<option value="nov">November</option>
+<option value="may">December</option>
+</select>
+<br><br>
+1)The course objectives were clearly expained<br>
+<input type="radio" name="a" value="5" required="required">5&nbsp&nbsp&nbsp  
+<input type="radio" name="a" value="4" required="required">4&nbsp&nbsp&nbsp  
+<input type="radio" name="a" value="3" required="required">3&nbsp&nbsp&nbsp
+<input type="radio" name="a" value="2" required="required">2&nbsp&nbsp&nbsp
+<input type="radio" name="a" value="1" required="required">1<br><br>
+
+2)Practical exercies<br>
+<input type="radio" name="b" value="5" required="required">5&nbsp&nbsp&nbsp  
+<input type="radio" name="b" value="4" required="required">4&nbsp&nbsp&nbsp  
+<input type="radio" name="b" value="3" required="required">3&nbsp&nbsp&nbsp
+<input type="radio" name="b" value="2" required="required">2&nbsp&nbsp&nbsp
+<input type="radio" name="b" value="1" required="required">1<br><br>
+
+3)Theory sessions<br>
+<input type="radio" name="c" value="5" required="required">5&nbsp&nbsp&nbsp  
+<input type="radio" name="c" value="4" required="required">4&nbsp&nbsp&nbsp  
+<input type="radio" name="c" value="3" required="required">3&nbsp&nbsp&nbsp
+<input type="radio" name="c" value="2" required="required">2&nbsp&nbsp&nbsp
+<input type="radio" name="c" value="1" required="required">1<br><br>
+
+4)Course materials/hand-outs<br>
+<input type="radio" name="d" value="5" required="required">5&nbsp&nbsp&nbsp  
+<input type="radio" name="d" value="4" required="required">4&nbsp&nbsp&nbsp  
+<input type="radio" name="d" value="3" required="required">3&nbsp&nbsp&nbsp
+<input type="radio" name="d" value="2" required="required">2&nbsp&nbsp&nbsp
+<input type="radio" name="d" value="1" required="required">1<br><br>
+
+5)The courses completed as per schedule<br>
+<input type="radio" name="e" value="5" required="required">5&nbsp&nbsp&nbsp  
+<input type="radio" name="e" value="4" required="required">4&nbsp&nbsp&nbsp  
+<input type="radio" name="e" value="3" required="required">3&nbsp&nbsp&nbsp
+<input type="radio" name="e" value="2" required="required">2&nbsp&nbsp&nbsp
+<input type="radio" name="e" value="1" required="required">1<br><br>
+
+6)The trainer(s) kept the course alive and intersting<br>
+<input type="radio" name="f" value="5" required="required">5&nbsp&nbsp&nbsp  
+<input type="radio" name="f" value="4" required="required">4&nbsp&nbsp&nbsp  
+<input type="radio" name="f" value="3" required="required">3&nbsp&nbsp&nbsp
+<input type="radio" name="f" value="2" required="required">2&nbsp&nbsp&nbsp
+<input type="radio" name="f" value="1" required="required">1<br><br>
+
+7)The class room environment<br>
+<input type="radio" name="g" value="5" required="required">5&nbsp&nbsp&nbsp  
+<input type="radio" name="g" value="4" required="required">4&nbsp&nbsp&nbsp  
+<input type="radio" name="g" value="3" required="required">3&nbsp&nbsp&nbsp
+<input type="radio" name="g" value="2" required="required">2&nbsp&nbsp&nbsp
+<input type="radio" name="g" value="1" required="required">1<br><br>
+
+8)Lab equipment<br>
+<input type="radio" name="h" value="5" required="required">5&nbsp&nbsp&nbsp  
+<input type="radio" name="h" value="4" required="required">4&nbsp&nbsp&nbsp  
+<input type="radio" name="h" value="3" required="required">3&nbsp&nbsp&nbsp
+<input type="radio" name="h" value="2" required="required">2&nbsp&nbsp&nbsp
+<input type="radio" name="h" value="1" required="required">1<br><br>
+
+9)Overall impression of this course<br>
+<input type="radio" name="i" value="5" required="required">5&nbsp&nbsp&nbsp  
+<input type="radio" name="i" value="4" required="required">4&nbsp&nbsp&nbsp  
+<input type="radio" name="i" value="3" required="required">3&nbsp&nbsp&nbsp
+<input type="radio" name="i" value="2" required="required">2&nbsp&nbsp&nbsp
+<input type="radio" name="i" value="1" required="required">1<br><br>
+
+10)Punctualityof faculty<br>
+<input type="radio" name="j" value="5" required="required">5&nbsp&nbsp&nbsp  
+<input type="radio" name="j" value="4" required="required">4&nbsp&nbsp&nbsp  
+<input type="radio" name="j" value="3" required="required">3&nbsp&nbsp&nbsp
+<input type="radio" name="j" value="2" required="required">2&nbsp&nbsp&nbsp
+<input type="radio" name="j" value="1" required="required">1<br><br>
+
+<hr>
+
+11)Support services and Hospitality<br>  
+<input type="radio" name="k" value="5" required="required">5&nbsp&nbsp&nbsp  
+<input type="radio" name="k" value="4" required="required">4&nbsp&nbsp&nbsp  
+<input type="radio" name="k" value="3" required="required">3&nbsp&nbsp&nbsp
+<input type="radio" name="k" value="2" required="required">2&nbsp&nbsp&nbsp
+<input type="radio" name="k" value="1" required="required">1<br><br>
+
+12)Building environment<br>
+<input type="radio" name="l" value="5" required="required">5&nbsp&nbsp&nbsp  
+<input type="radio" name="l" value="4" required="required">4&nbsp&nbsp&nbsp  
+<input type="radio" name="l" value="3" required="required">3&nbsp&nbsp&nbsp
+<input type="radio" name="l" value="2" required="required">2&nbsp&nbsp&nbsp
+<input type="radio" name="l" value="1" required="required">1<br><br>
+
+13)Front Office-conseling and support<br>
+<input type="radio" name="m" value="5" required="required">5&nbsp&nbsp&nbsp  
+<input type="radio" name="m" value="4" required="required">4&nbsp&nbsp&nbsp  
+<input type="radio" name="m" value="3" required="required">3&nbsp&nbsp&nbsp
+<input type="radio" name="m" value="2" required="required">2&nbsp&nbsp&nbsp
+<input type="radio" name="m" value="1" required="required">1<br><br>
+
+14)I would like to recommend this course to others[Y/N]<br>
+<input type="radio" name="n" value="1" required="required">Yes  
+<input type="radio" name="n" value="2" required="required">No<br><br>
+
+I liked:<br><textarea rows="5" cols="30" name="liked"> </textarea><br><br>
+I recommend changes on:<br><textarea rows="5" cols="30" name="changes"> </textarea><br><br>
+Any other comments and suggestions:<br><textarea rows="5" cols="30" name="comments"> </textarea><br><br>
+<input type="submit" value="submit" class="register-button">
+</form>
+</body>
+</html>
